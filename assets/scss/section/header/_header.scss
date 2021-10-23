@@ -1,0 +1,63 @@
+.header {
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid #D0D0D0;
+    background: $white;
+
+    .logo {
+        img {
+            max-width: 178px;
+        }
+    }
+
+    .main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav {
+            ul {
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: 24px;
+
+                    a {
+                        display: block;
+                        font-size: 19px;
+                        font-weight: 700;
+                        color: #636363;
+                        transition: $transition;
+
+                        &:hover {
+                            color: $primary-color;
+                        }
+
+                        &.login {
+                            margin-left: 35px;
+                        }
+
+                        &.signup {
+                            width: 155px;
+                            height: 50px;
+                            line-height: 50px;
+                            text-align: center;
+                            color: $white;
+                            border-radius: 35px;
+                            background-image: linear-gradient(240.05deg, #F66161 41.59%, #FFA454 119.55%);
+
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
