@@ -32,6 +32,27 @@ $(document).ready(function() {
         dots: false,
     });
 
+    let winWidth = $(window).width();
+    
+    if(winWidth < 768) {
+        $('.trending .row').slick({
+            dots: true,
+            variableWidth: true,
+            arrows: false,
+        });
+    
+        $('.why-shop .row').slick({
+            dots: true,
+            variableWidth: true,
+            arrows: false,
+            centerMode: true,
+            dots: false,
+        });
+    }
+
+
+
+
     $('.faq .question-tab li').on('click', function() {
         $(this).addClass('active').siblings('li').removeClass('active');
         let getClass = '.faq .question-content .' + $(this).attr('data-tab');

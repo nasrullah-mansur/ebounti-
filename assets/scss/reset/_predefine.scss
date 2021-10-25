@@ -173,4 +173,24 @@ ul{
             font-size: 30px;
         }
     }
+
+    @media (max-width: 767.98px) {
+        h2 {
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        padding: 0 30px;
+    }
+
+    [class^="col"],
+    .col {
+        padding-left: 6px;
+        padding-right: 6px;
+    }
 }

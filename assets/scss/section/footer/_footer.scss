@@ -1,0 +1,135 @@
+
+// footer;
+.footer {
+    margin-top: 90px;
+    padding-top: 50px;
+    border-top: 1px solid #D0D0D0;
+
+    .logo {
+        .footer-logo {
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+    }
+
+    .app {
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    }
+
+    .item {
+        h4 {
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 28px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            li {
+                margin-bottom: 20px;
+
+                a {
+                    display: inline-block;
+                    color: #727272;
+                    transition: .2s;
+
+                    &:hover {
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        margin-top: 80px;
+        border-top: 1px solid #EBEBEB;
+
+        .content {
+            padding: 15px 0 30px;
+            display: flex;
+            justify-content: space-between;
+
+            p {
+                margin-bottom: 0;
+                font-size: 14px;
+                line-height: 24px;
+                color: $black;
+                font-weight: 700;
+            }
+
+            ul {
+                display: flex;
+
+                li {
+                    margin-left: 10px;
+
+                    a {
+                        display: inline-block;
+                        width: 36px;
+                        height: 36px;
+                        line-height: 36px;
+                        border-radius: 50%;
+                        border: 1px solid $primary-color;
+                        text-align: center;
+                        font-size: 14px;
+                        color: $primary-color;
+                        transition: .2s;
+
+                        &:hover {
+                            background-color: $primary-color;
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 767.98px) {
+        .logo {
+            text-align: center;
+        }
+
+        .item {
+            ul {
+                li {
+                    margin-bottom: 6px;
+
+                    a {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            position: relative;
+
+           .content {
+               flex-wrap: wrap;
+
+               p,
+               ul {
+                   width: 100%;
+               }
+
+               p {
+                   text-align: center;
+                   font-size: 12px;
+               }
+
+               ul {
+                   position: absolute;
+                   left: 0;
+                   bottom: 100%;
+                   justify-content: center;
+                   padding-bottom: 15px;
+               }
+           }
+        }
+    }
+}
