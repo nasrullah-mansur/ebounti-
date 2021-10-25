@@ -34,7 +34,7 @@ $(document).ready(function() {
 
     let winWidth = $(window).width();
     
-    if(winWidth < 768) {
+    if(winWidth < 992) {
         $('.trending .row').slick({
             dots: true,
             variableWidth: true,
@@ -49,6 +49,10 @@ $(document).ready(function() {
             dots: false,
         });
     }
+
+    $('.header .bars').on('click', function() {
+        $('.header .nav').slideToggle();
+    })
 
 
 

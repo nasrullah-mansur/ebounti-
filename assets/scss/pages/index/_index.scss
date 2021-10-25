@@ -171,7 +171,7 @@
             }
     
             .category-item {
-               
+               border-radius: 5px;
     
                 img {
                     height: 42px;
@@ -179,6 +179,7 @@
     
                 h3 {
                     padding: 0;
+                    padding-bottom: 10px;
                     margin-top: 0;
                     font-size: 10px;
                     line-height: 20px;
@@ -890,6 +891,8 @@
             }
         }
 
+    }
+    @media (max-width: 991.98px) {
         .slick-dots {
             display: flex;
             position: absolute;
@@ -897,7 +900,7 @@
             bottom: -15px;
             z-index: 99;
             transform: translateX(-50%);
-
+    
             li {
                 width: 5px;
                 height: 5px;
@@ -905,11 +908,11 @@
                 margin: 0 3px;
                 border-radius: 50%;
                 cursor: pointer;
-
+    
                 &.slick-active {
                     background-color: #C4C4C4;
                 }
-
+    
                 button {
                     display: none;
                 }

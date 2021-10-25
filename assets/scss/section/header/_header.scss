@@ -1,4 +1,5 @@
 .header {
+    position: relative;
     padding: 30px 0;
     position: fixed;
     top: 0;
@@ -55,6 +56,42 @@
                                 color: $white;
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+
+    .bars {
+        display: none;
+        cursor: pointer;
+    }
+
+    @media (max-width: 991.98px) {
+        border-bottom: 1px solid #D8D8D8;
+        
+        .bars {
+            display: block;
+            margin-left: auto;
+        }
+        
+        .main-nav {
+            .nav {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: $white;
+                margin-top: 1px;
+
+                ul {
+                    flex-direction: column;
+                    padding-top: 15px;
+
+                    li {
+                        margin-bottom: 15px;
+                        margin-left: 0;
                     }
                 }
             }
